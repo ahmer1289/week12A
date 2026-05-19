@@ -1,0 +1,11 @@
+name: wf_pr_develop
+on:
+  pull_request:
+    branches:
+      - develop
+jobs:
+  validate_pr_job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
